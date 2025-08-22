@@ -35,7 +35,7 @@
         <!-- Profile Photo -->
         <div class="flex justify-center lg:justify-end">
           <div class="profile-image">
-            <i class="fas fa-user text-6xl text-soft-light"></i>
+            <img :src="profileImage" alt="profile" class="object-cover">
           </div>
         </div>
       </div>
@@ -45,6 +45,7 @@
 
 <script setup lang="ts">
 import portfolioData from '@/data/portfolio.json'
+import profileImage from '@/assets/favicon.jpg'
 
 const handleNavClick = (event: Event) => {
   event.preventDefault()
